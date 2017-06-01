@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DKTFinal.Models.DriverRace>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Points)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Driver_DriverID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Race_RaceID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Points)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Driver_DriverID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Race_RaceID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DriverRaceID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DriverRaceID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DriverRaceID })
+        </td>
+    </tr>
+}
+
+</table>

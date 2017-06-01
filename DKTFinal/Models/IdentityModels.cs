@@ -29,5 +29,11 @@ namespace DKTFinal.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<DKTFinal.Models.Driver> Drivers { get; set; }
+
+        public System.Data.Entity.DbSet<DKTFinal.Models.DriverRace> DriverRaces { get; set; }
+
+        public System.Data.Entity.DbSet<DKTFinal.Models.Race> Races { get; set; }
     }
 }

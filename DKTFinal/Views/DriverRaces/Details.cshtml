@@ -1,0 +1,42 @@
+﻿@model DKTFinal.Models.DriverRace
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DriverRace</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Points)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Points)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Driver_DriverID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Driver_DriverID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Race_RaceID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Race_RaceID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DriverRaceID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

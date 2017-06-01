@@ -15,14 +15,42 @@ namespace DKTFinal.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "About Us";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact Info";
+
+            return View();
+        }
+
+        public ActionResult Calendar()
+        {
+            ViewBag.Message = "Calendar of Events";
+
+            return View();
+        }
+
+        public ActionResult Pictures()
+        {
+            ViewBag.Message = "Tour Photos";
+
+            return View();
+        }
+
+        public ActionResult Rules()
+        {
+            ViewBag.Message = "Tour Rules";
+
+            return View();
+        }
+
+        public ActionResult Sponsors()
+        {
+            ViewBag.Message = "We'd Like To Thank";
 
             return View();
         }
